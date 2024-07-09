@@ -1,0 +1,53 @@
+/* Import the default Swiper styles */
+@import "swiper/css";
+@import "swiper/css/pagination";
+@import "swiper/css/navigation";
+
+/* Custom Swiper Styles */
+.swiper-pagination-bullet {
+  width: 20px; /* Width of the dash */
+  height: 4px; /* Height of the dash */
+  background-color: #333; /* Color of the dash */
+  border-radius: 0; /* Remove border-radius for dash shape */
+  margin: 0 4px; /* Adjust spacing between dashes */
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #ff8c00; /* Color of the active dash */
+}
+
+/* Ensure all slides and cards have the same height */
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; /* Ensure the card takes up the full height of the slide */
+  box-sizing: border-box;
+  padding: 20px; /* Add some padding to the card */
+}
+
+.swiper-pagination {
+  position: absolute;
+  bottom: 10px; /* Adjust this value as needed */
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+/* Styles for the centered slide */
+.centered-slide {
+  background-color: #ff8c00 !important; /* Your primary color */
+  color: #fff !important;
+}
+
+.centered-slide .text-lg,
+.centered-slide .font-semibold,
+.centered-slide .text-gray-800 {
+  color: #fff !important;
+}
