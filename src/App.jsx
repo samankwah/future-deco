@@ -5,6 +5,7 @@ import About from "./pages/about";
 import ContactUs from "./pages/contact-us";
 import Collection from "./pages/collection";
 import RootLayout from "./layouts/rootLayout";
+import HowItWorks from "./pages/landing/components/services";
 
 function App() {
   const router = createBrowserRouter([
@@ -27,6 +28,10 @@ function App() {
         {
           path: "contact-us",
           element: <ContactUs />,
+        },
+        {
+          path: "howitworks",
+          element: <HowItWorks />,
         },
       ],
     },
